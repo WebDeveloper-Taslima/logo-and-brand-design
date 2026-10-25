@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>IRON &amp; LEAF CULTIVATION CO. | Outlaw Motorcycle Craft Cannabis</title>
+  <meta name="description" content="Local micro-batch craft cannabis genetics grown by an outlaw motorcycle brotherhood. High octane terpene profiles, cold-cured buds, and 100% organic living soil.">
+  <meta name="keywords" content="cannabis startup, craft cannabis, motorcycle club cannabis, local marijuana grow, boutique weed, organic weed, weed strains, dispensary wholesale">
+  
+  <!-- Open Graph / Social Sharing Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="IRON &amp; LEAF CULTIVATION CO. | Outlaw Craft Cannabis">
+  <meta property="og:description" content="Born on the Road. Grown in the Dirt. Local micro-batch craft cannabis.">
+  <meta property="og:image" content="assets/images/iron-and-leaf-logo.jpg">
+  
+  <!-- Security Headers Simulation -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:;">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-badge.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       LEGAL 21+ AGE VERIFICATION GATE (Mandatory Web Security & Legal Compliance)
+       ========================================================================== -->
+  <div id="ageGateModal" class="age-gate-overlay" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+    <div class="age-gate-card">
+      <div class="age-gate-logo">
+        <img src="assets/images/iron-and-leaf-logo.jpg" alt="Iron and Leaf Emblem">
+      </div>
+      <div class="hero-badge-tag" style="margin-bottom: 0.75rem;">Security &amp; Legal Gate</div>
+      <h2 id="ageGateTitle">ARE YOU <span class="green-text">21 YEARS</span> OR OLDER?</h2>
+      <p>
+        Iron &amp; Leaf Cultivation Co. produces state-regulated, craft medicinal &amp; adult-use cannabis products. 
+        By entering this portal, you verify under penalty of perjury that you are at least 21 years of age.
+      </p>
+
+      <div class="age-actions">
+        <button id="btnAgeVerify" class="btn btn-primary">
+          <span>⚡ Enter The Stash (21+)</span>
+        </button>
+        <button id="btnAgeReject" class="btn btn-outline">
+          <span>Exit Portal</span>
+        </button>
+      </div>
+
+      <div style="margin-bottom: 1.25rem;">
+        <label style="font-size: 0.85rem; color: #9ca3af; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;">
+          <input type="checkbox" id="rememberAgeCheck" checked style="accent-color: #10b981;">
+          Remember my verification on this device (30 Days)
+        </label>
+      </div>
+
+      <div class="age-legal">
+        Strict Age Gate &bull; SSL 256-Bit Encrypted &bull; State License #IL-MC-8849-GROW
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOP NAVIGATION BAR
+       ========================================================================== -->
+  <nav id="siteNav" class="site-nav">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <img src="assets/images/iron-and-leaf-logo.jpg" alt="Iron and Leaf Logo">
+        <div class="brand-titles">
+          <span class="title-main">IRON &amp; LEAF</span>
+          <span class="title-sub">CULTIVATION CO. &bull; M.C.</span>
+        </div>
+      </a>
+
+      <ul id="navLinks" class="nav-links">
+        <li><a href="#strains">The Reserve</a></li>
+        <li><a href="#cultivation">Craft Method</a></li>
+        <li><a href="#brotherhood">Brotherhood</a></li>
+        <li><a href="#compliance">Security &amp; Labs</a></li>
+        <li><a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem; font-size: 1rem;">Dispensary Dispatch</a></li>
+      </ul>
+
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle Navigation">
+        &#9776;
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header id="home" class="hero-section">
+    <div class="hero-backdrop" style="background-image: url('assets/images/hero-bg.jpg');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge-tag">
+        <span>🏍️ Motor Club Heritage &bull; 100% Local Micro-Grow</span>
+      </div>
+
+      <h1 class="hero-title">
+        BORN ON THE ROAD. <br>
+        <span class="text-gradient">GROWN IN THE DIRT.</span>
+      </h1>
+
+      <p class="hero-desc">
+        We swapped highway asphalt for organic living soil. Iron &amp; Leaf is an independent craft cannabis collective founded by an outlaw motorcycle crew. Micro-batch grown, terpene-dense, and slow cold-cured for true connoisseurs.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#strains" class="btn btn-primary">
+          <span>🔥 Explore Current Harvest</span>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Wholesale &amp; Pre-Orders</span>
+        </a>
+      </div>
+
+      <!-- Live Facility & Potency Stats -->
+      <div class="stats-banner">
+        <div class="stat-box glass-panel">
+          <div class="stat-number green-text">33.1%</div>
+          <div class="stat-label">Peak THC Potency</div>
+        </div>
+        <div class="stat-box glass-panel">
+          <div class="stat-number gold-text">45 DAYS</div>
+          <div class="stat-label">Cold Vault Cure</div>
+        </div>
+        <div class="stat-box glass-panel">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Organic Living Soil</div>
+        </div>
+        <div class="stat-box glass-panel">
+          <div class="stat-number green-text">ZERO</div>
+          <div class="stat-label">Synthetic Pesticides</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       STRAIN CATALOG / HARVEST MENU
+       ========================================================================== -->
+  <section id="strains" class="catalog-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Direct From The Vault</span>
+        <h2>THE HARVEST <span class="green-text">LINEUP</span></h2>
+        <p>
+          Heavy gas, rare landrace genetics, and exotic dessert cuts bred and cured inside our climate-controlled local grow facility.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="strain-filters">
+        <button class="filter-btn active" data-filter="all">All Strains</button>
+        <button class="filter-btn" data-filter="indica">Heavy Indica</button>
+        <button class="filter-btn" data-filter="sativa">Rebel Sativa</button>
+        <button class="filter-btn" data-filter="hybrid">Exotic Hybrid</button>
+      </div>
+
+      <!-- Dynamic Strain Grid (Filled by main.js) -->
+      <div id="strainGrid" class="strain-grid">
+        <!-- Rendered via JavaScript with full batch data -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CULTIVATION METHOD & GROW OPERATION
+       ========================================================================== -->
+  <section id="cultivation" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">Our Facility &amp; Standards</span>
+          <h2>THE OUTLAW <span class="gold-text">METHOD</span></h2>
+          <p style="margin-bottom: 1.5rem; font-size: 1.1rem; color: #d1d5db;">
+            Corporate cannabis cuts corners. We do not. Our brotherhood applies military discipline and mechanical precision to craft horticulture.
+          </p>
+
+          <div class="process-steps">
+            <div class="step-card glass-panel">
+              <div class="step-number">01</div>
+              <div class="step-content">
+                <h4>Heritage Clone &amp; Landrace Cuts</h4>
+                <p>We source authentic genetic cuts from underground breeders, veterans, and motorcycle runs dating back thirty years.</p>
+              </div>
+            </div>
+
+            <div class="step-card glass-panel">
+              <div class="step-number">02</div>
+              <div class="step-content">
+                <h4>No-Till Living Organic Soil</h4>
+                <p>Our plants feed on rich worm castings, mycorrhizae, kelp, and volcanic rock dust. Pure nature, maximum terpene expression.</p>
+              </div>
+            </div>
+
+            <div class="step-card glass-panel">
+              <div class="step-number">03</div>
+              <div class="step-content">
+                <h4>45-Day Low-Temp Cold Curing</h4>
+                <p>Buds are hand-trimmed and cured in sealed stainless steel vaults at 60°F / 60% humidity to lock in volatile aromatic monoterpenes.</p>
+              </div>
+            </div>
+
+            <div class="step-card glass-panel">
+              <div class="step-number">04</div>
+              <div class="step-content">
+                <h4>Batch Lab Verification &amp; Full COA</h4>
+                <p>Every single drop is tested by state certified third-party testing labs. Zero heavy metals, zero molds, pure clean smoke.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-badge-wrap">
+          <img src="assets/images/craft-buds.jpg" alt="Frosty Craft Cannabis Buds" loading="lazy">
+          <div style="margin-top: 1.5rem;">
+            <div class="hero-badge-tag" style="background: rgba(16, 185, 129, 0.15); border-color: #10b981; color: #6ee7b7;">
+              ✓ Hand Trimmed &bull; Glass Jar Sealed
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BROTHERHOOD & BRAND LORE
+       ========================================================================== -->
+  <section id="brotherhood" class="catalog-section" style="background: #090a0d;">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-badge-wrap">
+          <img src="assets/images/iron-and-leaf-logo.jpg" alt="Iron and Leaf Brotherhood Crest" loading="lazy">
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag">Honor, Brotherhood, Craft</span>
+          <h2>FROM CHOPPERS <span class="green-text">TO CROPS</span></h2>
+          <p style="margin-bottom: 1.25rem;">
+            Our club was forged through decades of open highway rides, wrenching on vintage V-twins, and standing shoulder to shoulder. When legalization unlocked local craft cultivation, our crew channeled our shared dedication into building our state's most uncompromising craft grow facility.
+          </p>
+          <p style="margin-bottom: 2rem;">
+            We don't answer to Wall Street venture capitalists or corporate conglomerates. We answer to the riders, the veterans, and the local patients who rely on clean, unadulterated flower.
+          </p>
+
+          <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            <div>
+              <div class="gold-text" style="font-family: var(--font-heading); font-size: 1.8rem;">100% INDEPENDENT</div>
+              <p style="font-size: 0.85rem;">Veteran &amp; Rider Owned</p>
+            </div>
+            <div>
+              <div class="green-text" style="font-family: var(--font-heading); font-size: 1.8rem;">COMMUNITY ROOTS</div>
+              <p style="font-size: 0.85rem;">Local Jobs &amp; Taxes Reinvested</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECURITY & LAB COMPLIANCE BANNER
+       ========================================================================== -->
+  <section id="compliance" class="security-banner">
+    <div class="container">
+      <div class="security-grid">
+        <div class="security-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+          <h4>Strict 21+ Age Gate</h4>
+          <p>Verified browser persistence &amp; strict legal compliance defense.</p>
+        </div>
+
+        <div class="security-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+          <h4>256-Bit SSL Encrypted</h4>
+          <p>CSRF guarded, sanitized endpoints, and protected customer privacy.</p>
+        </div>
+
+        <div class="security-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          <h4>Seed-To-Sale Tracked</h4>
+          <p>State compliance traceability integration on all batch manifests.</p>
+        </div>
+
+        <div class="security-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <h4>Third-Party Tested</h4>
+          <p>Full Certificate of Analysis (COA) for pesticides, microbes &amp; potency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DISPENSARY WHOLESALE & PRE-ORDER DISPATCH FORM
+       ========================================================================== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-card glass-panel">
+        <div class="section-header" style="margin-bottom: 2rem;">
+          <span class="section-tag">Direct Dispensary Transmission</span>
+          <h2>WHOLESALE &amp; <span class="gold-text">VIP DISPATCH</span></h2>
+          <p>
+            Licensed dispensaries, provisioning centers, and verified members can request drop allocations, schedule facility walkthroughs, or reserve harvest boxes.
+          </p>
+        </div>
+
+        <form id="inquiryForm" class="contact-form">
+          <!-- Hidden CSRF Token for Web Security -->
+          <input type="hidden" name="csrf_token" id="csrfTokenInput" value="">
+          
+          <!-- Anti-Spam Honeypot (Trap for automated bots) -->
+          <input type="text" name="biker_secret_field" class="ohnohoney" tabindex="-1" autocomplete="off">
+
+          <div class="form-group">
+            <label for="fullname">Representative Name *</label>
+            <input type="text" id="fullname" name="fullname" class="form-control" placeholder="e.g. Jax Teller" required maxlength="100">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Business / Personal Email *</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="jax@rebeldispensary.com" required maxlength="100">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Direct Phone</label>
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 019-2834" maxlength="30">
+          </div>
+
+          <div class="form-group">
+            <label for="license_no">State Cannabis License # (If Wholesale)</label>
+            <input type="text" id="license_no" name="license_no" class="form-control" placeholder="e.g. DISP-2026-9901" maxlength="50">
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="inquiry_type">Inquiry Classification</label>
+            <select id="inquiry_type" name="inquiry_type" class="form-control">
+              <option value="wholesale">Licensed Dispensary Wholesale Allocation</option>
+              <option value="dispensary">Retail Shelf Placement Inquiry</option>
+              <option value="vip_crew">VIP Crew / Drop Alert Notification</option>
+              <option value="cultivation_inquiry">Genetic / Cultivation Collaboration</option>
+              <option value="general">General Transmission</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group-full">
+            <label for="message">Transmission Message *</label>
+            <textarea id="message" name="message" class="form-control" placeholder="Detail your wholesale volume request, strain preference, or questions..." required maxlength="2500"></textarea>
+          </div>
+
+          <div class="form-group form-group-full" style="text-align: center;">
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.1rem;">
+              <span>⚡ Transmit Encrypted Dispatch</span>
+            </button>
+            <p class="form-notice">
+              🛡️ Protected by CSRF tokens, honeypot defenses, and rate-limiting protocols. Your data is strictly confidential.
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       STRAIN DETAILS MODAL (POPUP)
+       ========================================================================== -->
+  <div id="strainModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button id="modalCloseBtn" class="modal-close" aria-label="Close dialog">&times;</button>
+      <div id="modalContentBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER & COMPLIANCE WARNINGS
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="assets/images/logo-badge.svg" alt="Iron and Leaf Emblem" style="width: 42px; height: 42px;">
+            <span style="font-family: var(--font-heading); font-size: 1.5rem; letter-spacing: 2px;">IRON &amp; LEAF CULTIVATION CO.</span>
+          </div>
+          <p>
+            An outlaw motorcycle craft cannabis collective. Locally cultivated in state-licensed living organic soil micro-rooms.
+          </p>
+          <div style="margin-top: 1rem; color: #f59e0b; font-size: 0.85rem; font-weight: bold;">
+            📍 Facility: Bay County Industrial Park &bull; Lic #IL-MC-8849-GROW
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#strains">Current Strains</a></li>
+            <li><a href="#cultivation">Grow Process</a></li>
+            <li><a href="#brotherhood">The Brotherhood</a></li>
+            <li><a href="#compliance">Lab Results (COA)</a></li>
+            <li><a href="#contact">Wholesale Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal &amp; Security</h4>
+          <ul>
+            <li><a href="javascript:void(0)" onclick="localStorage.removeItem('iron_leaf_age_verified'); location.reload();">Reset Age Verification</a></li>
+            <li><a href="#compliance">Seed-to-Sale Tracking</a></li>
+            <li><a href="#compliance">Web Security Protocol</a></li>
+            <li><a href="security-config/WEB_SECURITY_GUIDE.md" target="_blank">Security Whitepaper</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Cannabis Health & Safety Warning Disclaimer -->
+      <div class="compliance-disclaimer">
+        <strong>LEGAL DISCLAIMER &amp; WARNING:</strong> 
+        For use only by adults twenty-one years of age and older (or individuals eighteen years of age or older with a valid medical recommendation). Keep out of reach of children and pets. In case of accidental ingestion or overconsumption, contact poison control immediately. Cannabis products have intoxicating effects and may be habit-forming. Cannabis can impair concentration, coordination, and judgment. Do not operate a vehicle or machinery under the influence of cannabis. There may be health risks associated with consumption of cannabis during pregnancy or breastfeeding.
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2024-2026 Iron &amp; Leaf Cultivation Co. All Rights Reserved. Built with HTML5, PHP, and Web Security hardening.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

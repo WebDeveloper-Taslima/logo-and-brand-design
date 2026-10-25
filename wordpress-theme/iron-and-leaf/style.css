@@ -1,0 +1,18 @@
+/*
+Theme Name: Iron & Leaf Cultivation Co.
+Theme URI: https://example.com/iron-and-leaf
+Author: Advanced Web & Security Solutions
+Author URI: https://example.com
+Description: Custom WordPress theme engineered for outlaw motorcycle club craft cannabis cultivation startups, dispensaries, and micro-grows. Features 21+ Age Gate compliance, Custom Strain Post Types with lab potency metrics, CSRF-hardened inquiry endpoints, and dark glassmorphic biker aesthetics.
+Version: 1.0.0
+Tested up to: 6.7
+Requires at least: 6.0
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: iron-and-leaf
+Tags: dark, responsive, custom-post-types, security, ecommerce, cannabis, boutique
+*/
+
+/* Link to compiled CSS */
+@import url('assets/css/style.css');
